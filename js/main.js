@@ -206,6 +206,7 @@
       ['.scope ol', ':scope > li'],
       ['.ledger', ':scope > div'],
       ['.reach', ':scope > div'],
+      ['.team', ':scope > .person'],
       ['.stories', ':scope > figure'],
       ['.rail', ':scope > figure, :scope > .film-card']
     ];
