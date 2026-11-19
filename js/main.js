@@ -95,6 +95,25 @@
     dialog.addEventListener('close', function () { pv.pause(); if (opener) opener.focus(); loopSyncs.forEach(function (f) { f(); }); });
   }
 
+  /* Film cards with a short silent preview on hover (mouse only) */
+  if (window.matchMedia('(pointer: fine)').matches) {
+    document.querySelectorAll('.film-card__play[data-hover]').forEach(function (b) {
+      var v = null;
+      b.addEventListener('pointerenter', function () {
+        if (!v) {
+          v = document.createElement('video');
+          v.className = 'hover-loop'; v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto';
+          v.setAttribute('aria-hidden', 'true');
+          v.src = b.getAttribute('data-hover');
+          b.insertBefore(v, b.querySelector('.chip'));
+        }
+        b.classList.add('is-previewing');
+        var p = v.play(); if (p && p.catch) p.catch(function () {});
+      });
+      b.addEventListener('pointerleave', function () { b.classList.remove('is-previewing'); if (v) v.pause(); });
+    });
+  }
+
   /* ---------- Motion layer (motiondivision/motion) ----------
      Runs only when Motion loaded and the visitor has not asked for reduced motion.
      Start states are set here, by script, so nothing is hidden without it. */
@@ -187,7 +206,7 @@
       ['.scope ol', ':scope > li'],
       ['.ledger', ':scope > div'],
       ['.stories', ':scope > figure'],
-      ['.rail', ':scope > figure']
+      ['.rail', ':scope > figure, :scope > .film-card']
     ];
     groups.forEach(function (g) {
       document.querySelectorAll(g[0]).forEach(function (wrap) {

@@ -169,7 +169,7 @@ a { color: inherit; }
 .case-hero__city { grid-column: 1 / -1; font: 400 var(--text-md)/1.4 var(--font-body); color: var(--color-ink-2); }
 .case-hero h1 { grid-column: 1 / span 8; font-size: var(--text-display); line-height: 1.02; max-width: 16ch; }
 .case-hero__lede { grid-column: 1 / span 7; font-size: var(--text-lead); color: var(--color-muted); max-width: 46ch; }
-.case-facts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--color-rule); }
+.case-facts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--color-rule); }
 .case-facts > div { padding: var(--space-lg) var(--space-lg) 0; border-left: 1px solid var(--color-rule-soft); display: grid; gap: var(--space-xs); align-content: start; }
 .case-facts > div:first-child { padding-left: 0; border-left: 0; }
 .case-facts dt { color: var(--color-muted); font-size: var(--text-sm); }
@@ -343,7 +343,8 @@ a { color: inherit; }
   .footer__brand, .footer__nav { grid-column: 1 / -1; }
   .case-hero h1, .case-hero__lede { grid-column: 1 / -1; }
   .case-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .case-facts > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .case-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .case-facts > div:nth-child(4) { padding-left: 0; border-left: 0; }
   .stage__film { grid-column: 1 / -1; max-width: 380px; }
   .stage__notes { grid-column: 1 / -1; }
   .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -381,3 +382,10 @@ a { color: inherit; }
 .case-hero__text > * { grid-column: auto; }
 .case-hero__cover .film-wrap { position: relative; }
 .flag__media .film-wrap video { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-card); }
+.rail--films { grid-auto-columns: minmax(200px, 22%); }
+.film-card__play .hover-loop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity var(--dur-short) var(--ease-out); }
+.film-card__play.is-previewing .hover-loop { opacity: 1; }
+.facts strong { font-weight: 700; color: var(--color-ink-2); }
+@media (max-width: 60rem) { .rail--films { grid-auto-columns: minmax(200px, 40%); } }
+@media (max-width: 40rem) { .rail--films { grid-auto-columns: 62%; } }
+@media (prefers-reduced-motion: reduce) { .film-card__play .hover-loop { transition: none; } }
