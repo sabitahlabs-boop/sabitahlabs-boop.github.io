@@ -205,6 +205,7 @@
       ['.hours', ':scope > div'],
       ['.scope ol', ':scope > li'],
       ['.ledger', ':scope > div'],
+      ['.reach', ':scope > div'],
       ['.stories', ':scope > figure'],
       ['.rail', ':scope > figure, :scope > .film-card']
     ];
