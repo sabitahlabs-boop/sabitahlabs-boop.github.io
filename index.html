@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabitah Labs, a Jakarta studio for brands and film</title>
+  <meta name="description" content="Sabitah Labs is a Jakarta creative studio. Brand identity, social design and video for clients in Singapore, Seoul and Indonesia, working remotely.">
+  <meta name="theme-color" content="#0B132B">
+  <meta property="og:title" content="Sabitah Labs">
+  <meta property="og:description" content="Brands and film from Jakarta, for Singapore and Seoul.">
+  <meta property="og:image" content="assets/web/sabitah-showreel-poster.jpg">
+  <link rel="icon" type="image/png" href="assets/web/favicon.png">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Michroma&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/web/sabitah-showreel-poster.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__bar">
+      <a class="wordmark" href="index.html" aria-label="Sabitah Labs, home">
+        <img src="assets/web/sabitah-mark.png" alt="" width="152" height="160">
+        Sabitah Labs
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__end">
+        <a class="btn btn--mail" href="mailto:sabitah.labs@gmail.com">Email the studio</a>
+        <button class="btn btn--quiet nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: the real Lentor Modern film, credited with its city -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__ambient" aria-hidden="true">
+        <video muted loop playsinline preload="none" poster="assets/web/sabitah-showreel-poster.jpg"><source src="assets/web/sabitah-showreel.mp4" type="video/mp4"></video>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 id="hero-title" style="--i:0">From Jakarta, for Singapore and&nbsp;Seoul.</h1>
+          <p class="hero__lede" style="--i:1">Sabitah Labs designs brands and makes video for clients abroad, remotely.</p>
+          <div class="hero__actions" style="--i:2">
+            <a class="btn" href="mailto:sabitah.labs@gmail.com">Email the studio</a>
+            <button class="btn btn--quiet" type="button" data-play>
+              <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg>
+              Watch the Lentor film
+            </button>
+          </div>
+        </div>
+        <figure class="hero__film">
+          <div class="film" data-loop>
+            <video muted loop playsinline preload="metadata" poster="assets/web/sabitah-showreel-poster.jpg" aria-label="Sabitah Labs showreel: films for ADDP Architects, Eight Plastic Surgery, Monggo Mampir and Defarchy">
+              <source src="assets/web/sabitah-showreel.mp4" type="video/mp4">
+            </video>
+            <div class="film__ctrl">
+              <button class="chip" type="button" data-loop-toggle aria-pressed="false">
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1h3v10H2zM7 1h3v10H7z" fill="currentColor"/></svg>
+                <span>Pause loop</span>
+              </button>
+            </div>
+          </div>
+          <figcaption class="credits">
+            <b>Showreel 2026</b>
+            <span>Shot and cut for ADDP Architects, Eight Plastic Surgery, Monggo Mampir and Defarchy</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Flagship: the two international clients, side by side -->
+    <section class="section" id="work" aria-labelledby="flag-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="flag-title">Two clients abroad, shown in full</h2>
+          <p>An architecture firm in Singapore and a surgery clinic in Seoul. Each card says who they are and what we made.</p>
+        </div>
+
+        <div class="flagship">
+          <article class="flag" data-reveal style="--i:0">
+            <figure class="flag__media">
+              <div class="film-wrap" data-loop><video muted loop playsinline preload="metadata" poster="assets/web/loop-addp.jpg" aria-label="Guoco Midtown II lobby, a loop from a film for ADDP"><source src="assets/web/loop-addp.mp4" type="video/mp4"></video></div>
+              <img src="assets/web/addp-still-tower.jpg" alt="Lentor Modern tower, dark balconies stacked against the sky" width="720" height="1280" loading="lazy">
+              <button class="chip" type="button" data-play>
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg>
+                Play Lentor Modern
+              </button>
+            </figure>
+            <div class="flag__body">
+              <p class="flag__city">Singapore</p>
+              <h3>ADDP Architects</h3>
+              <dl class="facts">
+                <div><dt>Location</dt><dd>Singapore</dd></div>
+                <div><dt>Business</dt><dd>Architecture and luxury residential</dd></div>
+                <div><dt>Project</dt><dd>Lentor Modern, for GuocoLand</dd></div>
+                <div><dt>Our role</dt><dd>Video concept, production and edit for the project showcase</dd></div>
+              </dl>
+              <a class="link" href="addp.html">Read the ADDP case study</a>
+            </div>
+          </article>
+
+          <article class="flag flag--flip" data-reveal style="--i:1">
+            <figure class="flag__media">
+              <div class="film-wrap" data-loop><video muted loop playsinline preload="metadata" poster="assets/web/loop-eight.jpg" aria-label="The Eight Plastic Surgery feed scrolling, a loop from a collage film"><source src="assets/web/loop-eight.mp4" type="video/mp4"></video></div>
+              <img src="assets/web/eight-feed-v2-02-fat-graft.jpg" alt="Eight Plastic Surgery feed post on fat grafting, two before and after cases" width="1080" height="1350" loading="lazy">
+            </figure>
+            <div class="flag__body">
+              <p class="flag__city">Seoul</p>
+              <h3>Eight Plastic Surgery</h3>
+              <dl class="facts">
+                <div><dt>Location</dt><dd>Gangnam, Seoul, South Korea</dd></div>
+                <div><dt>Business</dt><dd>Aesthetic surgery and medical beauty</dd></div>
+                <div><dt>Project</dt><dd>Social feed for eye, face and body procedures</dd></div>
+                <div><dt>Our role</dt><dd>Visual branding, editorial feed design, before and after layouts</dd></div>
+              </dl>
+              <a class="link" href="eight.html">Read the Eight case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Index: every project, filed by city -->
+    <section class="section" aria-labelledby="index-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="index-title">Every project, filed by city</h2>
+          <p>Five clients so far. Open any row for the full case.</p>
+        </div>
+        <div class="index__head" aria-hidden="true">
+          <span></span><span>Location</span><span>Client and business</span><span>Our role</span><span></span>
+        </div>
+        <ul class="index">
+          <li data-reveal style="--i:0"><a class="index__row" href="addp.html" data-peek="assets/web/loop-addp.mp4">
+            <img class="index__thumb" src="assets/web/addp-still-tower.jpg" alt="" width="720" height="1280" loading="lazy">
+            <span class="index__city">Singapore</span>
+            <span class="index__client"><strong>ADDP Architects</strong><span class="index__cell">Architecture, real estate</span></span>
+            <span class="index__cell index__cell--role">Video concept and edit</span>
+            <span class="index__go">Lentor Modern film</span>
+          </a></li>
+          <li data-reveal style="--i:1"><a class="index__row" href="eight.html" data-peek="assets/web/loop-eight.mp4">
+            <img class="index__thumb" src="assets/web/eight-feed-v2-01-canthoplasty.jpg" alt="" width="1080" height="1350" loading="lazy">
+            <span class="index__city">Seoul</span>
+            <span class="index__client"><strong>Eight Plastic Surgery</strong><span class="index__cell">Aesthetic surgery clinic</span></span>
+            <span class="index__cell index__cell--role">Feed design, visual branding</span>
+            <span class="index__go">Nine feed posts</span>
+          </a></li>
+          <li data-reveal style="--i:2"><a class="index__row" href="monggo-mampir.html" data-peek="assets/web/loop-monggo.mp4">
+            <img class="index__thumb" src="assets/web/monggo-5.jpg" alt="" width="1080" height="1350" loading="lazy">
+            <span class="index__city">Jakarta</span>
+            <span class="index__client"><strong>Monggo Mampir</strong><span class="index__cell">Rooftop cafe and dining</span></span>
+            <span class="index__cell index__cell--role">Menu campaigns, social visuals</span>
+            <span class="index__go">Six menu posts</span>
+          </a></li>
+          <li data-reveal style="--i:3"><a class="index__row" href="county.html" data-peek="assets/web/county-logo-v2.jpg">
+            <img class="index__thumb" src="assets/web/county-logo-v2.jpg" alt="" width="1024" height="1024" loading="lazy">
+            <span class="index__city">Indonesia</span>
+            <span class="index__client"><strong>Calculate</strong><span class="index__cell">Offline ERP, formerly County</span></span>
+            <span class="index__cell index__cell--role">In-house product, brand and build</span>
+            <span class="index__go">Zero internet</span>
+          </a></li>
+          <li data-reveal style="--i:4"><a class="index__row" href="defarchy.html" data-peek="assets/web/loop-defarchy.mp4">
+            <img class="index__thumb" src="assets/web/defarchy-mascot-main.jpg" alt="" width="1000" height="1000" loading="lazy">
+            <span class="index__city">Jakarta</span>
+            <span class="index__client"><strong>Defarchy</strong><span class="index__cell">Electric bike store</span></span>
+            <span class="index__cell index__cell--role">Logo system, mascot, social</span>
+            <span class="index__go">Six-mode mascot</span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services: what the studio makes, each tied to where it was made -->
+    <section class="section--wide" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="services-title">What we make, and where it ran</h2>
+          <p>Two disciplines in one team, so the brand and the film come out of the same room.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <h3>Brand and visual identity</h3>
+            <ul>
+              <li><span>Logo systems and mascots</span><a href="defarchy.html">Defarchy</a></li>
+              <li><span>Editorial social feeds</span><a href="eight.html">Eight</a></li>
+              <li><span>Product branding for software</span><a href="county.html">Calculate</a></li>
+            </ul>
+          </article>
+          <article class="service">
+            <h3>Content and video production</h3>
+            <ul>
+              <li><span>Video concept, shoot and edit</span><a href="addp.html">ADDP</a></li>
+              <li><span>Vertical films for property launches</span><a href="addp.html">Lentor Modern</a></li>
+              <li><span>Campaign posts for menus and launches</span><a href="monggo-mampir.html">Monggo Mampir</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours: how far the studio sits from the client's desk -->
+    <section class="section" aria-labelledby="hours-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="hours-title">One or two hours from your desk</h2>
+          <p>We work from Jakarta. Singapore is one hour ahead, Seoul two.</p>
+        </div>
+        <div class="hours">
+          <div><span>The studio</span><b class="num" data-tz="Asia/Jakarta">UTC+7</b><strong>Jakarta</strong></div>
+          <div><span>One hour ahead</span><b class="num" data-tz="Asia/Singapore">UTC+8</b><strong>Singapore</strong></div>
+          <div><span>Two hours ahead</span><b class="num" data-tz="Asia/Seoul">UTC+9</b><strong>Seoul</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <h2 id="contact-title">Send us the brief</h2>
+        <a class="contact__mail" href="mailto:sabitah.labs@gmail.com">sabitah.labs@gmail.com</a>
+        <div class="contact__row">
+          <a class="btn" href="https://wa.me/6282118899903">WhatsApp +62 821-1889-9903</a>
+          <a class="btn btn--quiet" href="https://www.instagram.com/sabitah.labs/">Instagram @sabitah.labs</a>
+        </div>
+        <p class="muted">A link, a deadline and a market is enough to start. We reply from Jakarta.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__mast">
+        <div class="footer__brand">
+          <img src="assets/web/sabitah-logo-trimmed.png" alt="Sabitah, Revolution Start Now" width="640" height="380" loading="lazy">
+          <p>Sabitah Labs, a creative studio in Jakarta, Indonesia.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <div>
+            <h2>Abroad</h2>
+            <ul>
+              <li><a href="addp.html">ADDP Architects</a></li>
+              <li><a href="eight.html">Eight Plastic Surgery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Indonesia</h2>
+            <ul>
+              <li><a href="monggo-mampir.html">Monggo Mampir</a></li>
+              <li><a href="county.html">Calculate</a></li>
+              <li><a href="defarchy.html">Defarchy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__base">
+        <span>&copy; 2026 Sabitah Labs</span>
+        <span class="footer__contact"><a class="link" href="mailto:sabitah.labs@gmail.com">sabitah.labs@gmail.com</a><a class="link" href="https://wa.me/6282118899903">WhatsApp +62 821-1889-9903</a><a class="link" href="https://www.instagram.com/sabitah.labs/">Instagram @sabitah.labs</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="player" id="player" aria-label="Lentor Modern film">
+    <div class="player__bar">
+      <span>Lentor Modern, ADDP Architects, Singapore</span>
+      <button class="chip" type="button" data-close>Close</button>
+    </div>
+    <video controls playsinline preload="none" poster="assets/web/addp-poster.jpg">
+      <source src="assets/web/addp-lentor-720.mp4" type="video/mp4">
+    </video>
+  </dialog>
+
+  <script src="js/vendor/motion.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

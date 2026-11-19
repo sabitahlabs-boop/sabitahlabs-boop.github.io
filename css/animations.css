@@ -1,0 +1,24 @@
+/* Motion layer. Effects are driven by Motion (js/vendor/motion.min.js, motiondivision/motion) from js/main.js.
+   Nothing is hidden by CSS: elements are only set to their start state by script, once Motion has loaded,
+   so the page reads in full with scripting off or under reduced motion. */
+
+/* Word split for display heads: each word clips its own rise */
+.split-word { display: inline-block; overflow: clip; overflow-clip-margin: 0.12em; vertical-align: top; padding-bottom: 0.06em; margin-bottom: -0.06em; }
+.split-word > span { display: inline-block; will-change: transform; }
+
+/* City names rise out of a clipped line */
+.flag__city { overflow: clip; overflow-clip-margin: 0.1em; }
+.flag__city > span { display: inline-block; }
+
+/* Reading progress on case pages, scrubbed by scroll */
+.progress { position: fixed; inset: 0 0 auto 0; height: 2px; z-index: var(--z-toast); background: var(--color-accent); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none; }
+
+/* The film loop holds still until the script runs, and carries a visible pause control */
+html:not(.js) [data-loop-toggle] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .progress { display: none; }
+  .split-word > span { transform: none !important; opacity: 1 !important; }
+  [data-loop-toggle] { display: none; }
+  .btn, .chip, .link, .index__row { transition: none; }
+}

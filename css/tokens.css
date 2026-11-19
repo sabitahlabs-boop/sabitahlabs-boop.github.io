@@ -1,0 +1,35 @@
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 4.4vw + 1rem, 5.25rem);
+  --text-city: clamp(3rem, 6vw + 0.5rem, 6.5rem);
+  --text-section: clamp(2.25rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(70% 0.16 27); --color-success: oklch(75% 0.12 150);
+  --container: 1400px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --nav-h: 72px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+
+  /* Brand palette from the brief: navy field, gold signal, champagne highlight */
+  --color-paper: oklch(19.4% 0.05 268);
+  --color-paper-deep: oklch(16.5% 0.046 269);
+  --color-paper-2: oklch(24.9% 0.053 267);
+  --color-paper-3: oklch(27.1% 0.054 269);
+  --color-ink: oklch(97% 0.008 268);
+  --color-ink-2: oklch(92.3% 0.061 92);
+  --color-muted: oklch(73% 0.035 258);
+  --color-rule: oklch(36% 0.045 88);
+  --color-rule-soft: oklch(29% 0.04 262);
+  --color-accent: oklch(76.7% 0.139 91);
+  --color-accent-2: oklch(83% 0.12 92);
+  --color-accent-ink: oklch(19.4% 0.05 268);
+  --color-focus: oklch(80% 0.17 91);
+  --color-scrim: oklch(12% 0.04 268 / 0.88);
+
+  --font-display: "Gloock", "Libre Bodoni", Georgia, ui-serif, serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: "Michroma", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+  --radius-card: 4px; --radius-input: 2px; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none; --shadow-film: 0 30px 60px -20px oklch(8% 0.04 268 / 0.75);
+  --tracking-display: -0.015em;
+}

@@ -1,0 +1,14 @@
+# Internal working notes: never publish
+CLAUDE.md
+DELEGATION_BRIEF.md
+PROMPT_UNTUK_CLAUDE.md
+.hallmark/
+.impeccable/
+.claude/
+
+# Raw source assets: the site serves the optimized copies in assets/web/
+assets/logo/
+assets/clients/*
+!assets/clients/addp/
+assets/clients/addp/*
+!assets/clients/addp/addp-lentor.mp4
